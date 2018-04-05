@@ -1,2 +1,2 @@
-class CitiesController < ApplicationController
-end
+# class CitiesController < ApplicationController
+# end
