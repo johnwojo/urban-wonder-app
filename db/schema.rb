@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180404183232) do
-
-  create_table "actions", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    t.integer "city_id"
-  end
+ActiveRecord::Schema.define(version: 20180405205210) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "city_id"
   end
 
   create_table "user_cities", force: :cascade do |t|

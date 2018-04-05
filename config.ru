@@ -5,7 +5,7 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 use Rack::MethodOverride
-use ActionsController
+use TasksController
 use CitiesController
 use UsersController
 run ApplicationController
